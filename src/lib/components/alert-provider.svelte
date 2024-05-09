@@ -1,7 +1,7 @@
 <script lang="ts">
   import type { IOptions } from "../interfaces/IOptions.js";
 
-  import "../../app.css";
+  import "./app.css";
   import { alerts } from "$lib/stores/alerts.js";
   import AlertSuccess from "./alert-success.svelte";
   import AlertWarn from "./alert-warn.svelte";

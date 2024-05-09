@@ -41,7 +41,7 @@ Add the provider to your application's global layout file `+layout.svelte`or ano
 <AlertProvider options={{...}} />
 ```
 
-Customization options
+# Customization options
 
 - `mode: "auto"` Color mode, automatic light and dark
 - `success_icon: "bx bx-check-circle"` Success icon. More Icons [https://boxicons.com/](https://boxicons.com/)
@@ -49,7 +49,7 @@ Customization options
 - `error_icon: "bx bx-bug-alt"` Error icon. More Icons [https://boxicons.com/](https://boxicons.com/)
 - `info_icon: "bx bx-info-circle"` Info icon. More Icons [https://boxicons.com/](https://boxicons.com/)
 
-To add an alert
+# To add an alert
 
 ```ts
 import { alert } from "@pedrofreit4s/svelte-alert";
@@ -61,12 +61,12 @@ function showAlert() {
   const alertId = alert.push(
     "success",
     "Your username has been successfully activated!",
-    1500 // optional, defualt 3200 (3 secodns and 200ms)
+    1500
   );
 }
 ```
 
-To remove an alert
+# To remove an alert
 
 ```ts
 import { alert } from "@pedrofreit4s/svelte-alert";

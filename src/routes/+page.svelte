@@ -8,10 +8,17 @@
     // params[2] = Hidden time in ms
     // const alertId = alert.push("success", "Your username has been successfully activated!", 1500);
     const alertId = alert.push(
+      "success",
+      "Your username has been successfully activated!",
+      20000
+    );
+    alert.push("warn", "Your username has been successfully activated!", 20000);
+    alert.push(
       "error",
       "Your username has been successfully activated!",
-      4000
+      20000
     );
+    alert.push("info", "Your username has been successfully activated!", 20000);
   }
 </script>
 
