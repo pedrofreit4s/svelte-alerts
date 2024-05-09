@@ -9,7 +9,7 @@ function remove(id: string) {
   alerts.set(newAlerts);
 }
 
-function push(type: AlertType, message: string, hiddenTime: number = 2500) {
+function push(type: AlertType, message: string, hiddenTime: number = 3200) {
   const id = crypto.randomUUID();
   const alert: IAlert = {
     id,

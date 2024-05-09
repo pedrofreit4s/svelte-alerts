@@ -15,41 +15,34 @@
     success_icon: "bx bx-check-circle",
     warn_icon: "bx bx-error",
   };
-  export let options: IOptions;
+  export let options: IOptions | undefined;
+
+  let opts: IOptions = {
+    ...defaultOptions,
+    ...options,
+  };
 </script>
 
 <div class="flex flex-col gap-4 fixed bottom-5 right-5">
   {#each $alerts as alert}
     {#if alert.type === "success"}
       <div class="animated">
-        <AlertSuccess
-          icon={options?.success_icon || defaultOptions.success_icon}
-          {alert}
-        />
+        <AlertSuccess icon={opts?.success_icon} {alert} />
       </div>
     {/if}
     {#if alert.type === "warn"}
       <div class="animated">
-        <AlertWarn
-          icon={options?.warn_icon || defaultOptions.warn_icon}
-          {alert}
-        />
+        <AlertWarn icon={opts?.warn_icon} {alert} />
       </div>
     {/if}
     {#if alert.type === "error"}
       <div class="animated">
-        <AlertError
-          icon={options?.error_icon || defaultOptions.error_icon}
-          {alert}
-        />
+        <AlertError icon={opts?.error_icon} {alert} />
       </div>
     {/if}
     {#if alert.type === "info"}
       <div class="animated">
-        <AlertInfo
-          icon={options?.info_icon || defaultOptions.info_icon}
-          {alert}
-        />
+        <AlertInfo icon={opts?.info_icon} {alert} />
       </div>
     {/if}
   {/each}

@@ -12,7 +12,7 @@
       <i class={`${icon} text-4xl text-gray-600`}></i>
     </div>
     <div class="flex flex-col">
-      <h1 class="text-lg font-semibold text-gray-600">Sucesso!</h1>
+      <h1 class="text-lg font-semibold text-gray-600">Aviso!</h1>
       <p class="text-md text-gray-600">
         {alert.message}
       </p>

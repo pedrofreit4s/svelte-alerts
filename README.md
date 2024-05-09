@@ -15,13 +15,13 @@ A complete alert and warning package in svelte.
 Install into the project using npm
 
 ```bash
-  npm install @pedrofreit4s/avelte-alerts
+npm install @pedrofreit4s/avelte-alerts
 ```
 
 Install into the project using yarn
 
 ```bash
-  yarn add @pedrofreit4s/avelte-alerts
+yarn add @pedrofreit4s/avelte-alerts
 ```
 
 ## Usage
@@ -61,7 +61,7 @@ function showAlert() {
   const alertId = alert.push(
     "success",
     "Your username has been successfully activated!",
-    1500
+    1500 // optional, defualt 3200 (3 secodns and 200ms)
   );
 }
 ```

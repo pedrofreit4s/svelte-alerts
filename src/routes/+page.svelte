@@ -1,7 +1,6 @@
 <script lang="ts">
-  import AlertProvider from "../lib/components/alert-provider.svelte";
   import "../app.css";
-  import { alert } from "$lib/func/alert.js";
+  import { AlertProvider, alert } from "$lib/index.js";
 
   function showAlert() {
     // params[0] = "success" | "warn" | "error" | "info"
@@ -9,9 +8,9 @@
     // params[2] = Hidden time in ms
     // const alertId = alert.push("success", "Your username has been successfully activated!", 1500);
     const alertId = alert.push(
-      "info",
+      "error",
       "Your username has been successfully activated!",
-      2000
+      4000
     );
   }
 </script>
